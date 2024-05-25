@@ -35,13 +35,20 @@ type(num)
 * type(variableName) used to check the type of variable
 
 # Types of datatypes
- * integer
- * string
- * boolean
+ * int
+ * str
  * complex
  * list
  * tuple
- * dictionary
+ * range
+ * bytes
+ * bytearray
+ * dict
  * set
+ * frozenset
+ * bool
+ * None
+
+
 
 
