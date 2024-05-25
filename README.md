@@ -1,6 +1,3 @@
-# python_fundamentals
-
-
 #  How to get current working directory
 ~~~
 import os
@@ -37,7 +34,7 @@ type(num)
 * In Python we no need to define datatype while defining variable
 * type(variableName) used to check the type of variable
 
-# Types of variable
+# Types of datatypes
  * integer
  * string
  * boolean
