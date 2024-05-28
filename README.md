@@ -70,7 +70,11 @@ Hexadecimal: 0x25
 
 
 
-
+~~~
+print(bin(37)) # 0b100101
+print(oct(37)) # 0o45
+print(hex(37)) # 0x25
+~~~
 
 
 ## DataType: bool
@@ -82,7 +86,19 @@ isAvailable = True
 print(type(isAvailable)) # <class 'bool'>
 ~~~
 
+## Type Cast functions
+~~~
+num = 100
+num_float = float(num)   ## Convert Integer to float
+num_str = str(num)  ## Convert Integer to String
+bool_int = int(True) # 1 Convert boolean to int
+bool_value = bool(0) # false
+bool_value = bool('') # false
+num = str('100.25') #  [invalid literal for int() with base 10: '100.25']
+~~~
+####  While converting string with float value to int , we will above get error.
 
+---
 
 
 
