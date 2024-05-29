@@ -100,14 +100,14 @@ num = str('100.25') #  [invalid literal for int() with base 10: '100.25']
 
 ---
 
-## How to import a package in python
+## How to import a package in python?
 ~~~
 import random
 
 print(dir(random)) # Show all methods inside package
 # help(random.randint) # Show the method definition
 ~~~
-### How to call methods / parameters inside package
+### How to call methods / parameters inside package?
 ~~~
 
 import sys
@@ -125,6 +125,16 @@ print(math.pi)  # 3.141592653589793
 time.sleep(5)
 print(time.time_ns()) # 1716957146486703000
 
+~~~
+## How to install and import outside package 
+~~~
+pip install cv2  
+OR
+pip install opencv-python
+
+
+import cv2
+import streamlit
 ~~~
 
 
