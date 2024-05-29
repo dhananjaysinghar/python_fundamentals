@@ -100,6 +100,32 @@ num = str('100.25') #  [invalid literal for int() with base 10: '100.25']
 
 ---
 
+## How to import a package in python
+~~~
+import random
+
+print(dir(random)) # Show all methods inside package
+# help(random.randint) # Show the method definition
+~~~
+### How to call methods / parameters inside package
+~~~
+
+import sys
+import random
+import math
+import time
+import keyword
+
+
+print(random.randint(0, 1000)) # 780
+print(sys.executable) # /opt/anaconda3/bin/python
+print(keyword.kwlist) # ['False', 'None', 'True', ...]
+print(math.sqrt(144))  #12
+print(math.pi)  # 3.141592653589793
+time.sleep(5)
+print(time.time_ns()) # 1716957146486703000
+
+~~~
 
 
 
