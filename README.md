@@ -16,9 +16,9 @@ num_123=200   # VALID
 #num 123=300   # INVALID
 ~~~
 
-- Variables are case sinsetive
+- Variables are case sensitive
 - Variables can be capital and small letter
-- Variabbles doesnot allow special char
+- Variables doesn't allow special char
 - Only '_' can be variable
 - Variable doesn't contain any space between words
 - Variable cannot prefix with numbers
@@ -31,7 +31,7 @@ num=234;
 type(num)
 ~~~ 
 
-- In Python we no need to define datatype while defining variable
+- In Python, we don't need to define datatype while defining variable
 - type(variableName) used to check the type of variable
 
 # Types of Datatypes
