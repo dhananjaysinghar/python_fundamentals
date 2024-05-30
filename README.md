@@ -137,7 +137,7 @@ import cv2
 import streamlit
 ~~~
 
-### Use of Format and Round methods
+## Use of Format and Round methods
 
 ~~~ python
 name = "DJ"
@@ -149,7 +149,7 @@ print(round(num)) # 61
 print(round(num, 2)) # 61.93
 ~~~
 
-### What is use of end, sep operator
+## What is use of end, sep operator
 ~~~python
 print("Hello", end=' ')
 print("World")
@@ -159,7 +159,22 @@ print("Hello", "Good Morning", sep=' :) ')
 # Output: Hello :) Good Morning
 ~~~
 
+## How to get input from system keyboard
+~~~python
+##### approach 1
+num1 = input()
+num2 = input()
 
+add = int(num1) + int(num2)
+print(add)
+
+##### approach 2
+num1 = input("Enter 1st number : ")
+num2 = input("Enter 2nd number : ")
+
+add = int(num1) + int(num2)
+print(add)
+~~~
 
 
 
