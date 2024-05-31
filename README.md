@@ -176,7 +176,7 @@ print(num1 + num2)
 ~~~
 
 ### # WAP to find add, sub, mul, div from two inputs
-~~~
+~~~python
 num1 = eval(input("Enter the 1st number : "))
 num2 = eval(input("Enter the 2nd number : "))
 
@@ -187,7 +187,7 @@ print(f"Division of {num1} & {num2} is {round(num1 / num2)}")
 ~~~
 
 ### # WAP to find the average
-~~~
+~~~python
 num1 = eval(input("Enter the 1st number : "))
 num2 = eval(input("Enter the 2nd number : "))
 num3 = eval(input("Enter the 3rd number : "))
@@ -198,7 +198,7 @@ print(f"the average of {num1} & {num2} & {num3} is {avg}")
 ~~~
 
 ### # WAP to find the tip % amount from bill.
-~~~
+~~~python
 billAmount = eval(input("Enter Bill Amount : "))
 tipPercentage = eval(input("Tip % : "))
 
