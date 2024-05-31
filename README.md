@@ -168,15 +168,45 @@ num2 = input()
 add = int(num1) + int(num2)
 print(add)
 
-##### approach 2
-num1 = input("Enter 1st number : ")
-num2 = input("Enter 2nd number : ")
+##### approach 3
+num1 = eval(input("Enter the 1st number : "))
+num2 = eval(input("Enter the 2nd number : "))
 
-add = int(num1) + int(num2)
-print(add)
+print(num1 + num2)
 ~~~
 
+### # WAP to find add, sub, mul, div from two inputs
+~~~
+num1 = eval(input("Enter the 1st number : "))
+num2 = eval(input("Enter the 2nd number : "))
 
+print(f"Addition of {num1} & {num2} is {num1 + num2}")
+print(f"Multiplication of {num1} & {num2} is {num1 * num2}")
+print(f"Subtraction of {num1} & {num2} is {num1 - num2}")
+print(f"Division of {num1} & {num2} is {round(num1 / num2)}")
+~~~
+
+### # WAP to find the average
+~~~
+num1 = eval(input("Enter the 1st number : "))
+num2 = eval(input("Enter the 2nd number : "))
+num3 = eval(input("Enter the 3rd number : "))
+
+avg = round((num1 + num2 + num3) / 3, 2)
+
+print(f"the average of {num1} & {num2} & {num3} is {avg}")
+~~~
+
+### # WAP to find the tip % amount from bill.
+~~~
+billAmount = eval(input("Enter Bill Amount : "))
+tipPercentage = eval(input("Tip % : "))
+
+tipAmount = (billAmount * tipPercentage) / 100
+totalBill = billAmount + tipAmount
+
+print(round(totalBill, 2))
+~~~
 
 
 
