@@ -53,7 +53,7 @@ type(num)
 
 ~~~python
 Decimal: 37
-Binary: 0b0b100101
+Binary: 0b100101
 Octal: 0o45
 Hexadecimal: 0x25
 ~~~
@@ -206,6 +206,66 @@ tipAmount = (billAmount * tipPercentage) / 100
 totalBill = billAmount + tipAmount
 
 print(round(totalBill, 2))
+~~~
+
+### # WAP to find the area by providing the radius
+~~~python
+# Approach-1
+import math
+input_radius = eval(input("Enter the radius : "))
+area = math.pi * input_radius * input_radius
+print(f"The area of the circle with radius {input_radius} is {round(area, 2)}")
+
+
+# Approach-2: 
+import math
+input_radius = eval(input("Enter the radius : "))
+area = math.pi * (input_radius ** 2)
+print(f"The area of the circle with radius {input_radius} is {area:.2f}")
+~~~
+
+### # WAP to calculate triangle by taking input of height and breadth
+~~~python
+breadth = eval(input("Enter the breadth : "))
+height = eval(input("Enter the height : "))
+triangle = (breadth * height) / 2
+print(f"The triangle of the circle with height {height} and {breadth} = {round(triangle, 2)}")
+~~~
+### # WAP to ask the user to calculate the area and perimeter of the rectangle
+
+~~~python
+# Approach- (Hardcoded value)
+length = 10
+breadth = 20
+area = length * breadth
+perimeter = 2 * (length + breadth)
+print(f"area of length {length} and breadth: {breadth} is {round(area, 2)} and perimeter: {round(perimeter, 2)}")
+
+# Approach-2 (Input from Key board)
+length = eval(input("Enter the length: "))
+breadth = eval(input("Enter the breadth: "))
+area = length * breadth
+perimeter = 2 * (length + breadth)
+print(f"area of length {length} and breadth: {breadth} is {round(area, 2)} and perimeter: {round(perimeter, 2)}")
+
+
+# Approach-2 (Input from Key board)
+import random
+length = random.randint(1, 100)
+breadth = random.randint(1, 100)
+area = length * breadth
+perimeter = 2 * (length + breadth)
+print(f"area of length {length} and breadth: {breadth} is {round(area, 2)} and perimeter: {round(perimeter, 2)}")
+~~~
+### # WAP to ask the user to calculate the volume of cylinder
+~~~python
+import math
+
+radius = eval(input("Enter the radius : "))
+height = eval(input("Enter the height : "))
+volume = math.pi * radius * radius * height
+# volume = math.pi * radius ** 2 * height
+print(f"Volume of cylinder of radius {radius} and height {height} = {round(volume, 2)}")
 ~~~
 
 
