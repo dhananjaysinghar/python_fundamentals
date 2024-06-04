@@ -267,10 +267,37 @@ volume = math.pi * radius * radius * height
 # volume = math.pi * radius ** 2 * height
 print(f"Volume of cylinder of radius {radius} and height {height} = {round(volume, 2)}")
 ~~~
+### # if condition
+~~~pythod
+name = input("Enter name : ")
+if name.upper() == "DJ":
+    print(f" Hello {name}")
+~~~
 
+### # if else condition
+~~~python
+num = eval(input("Enter a number : "))
+if num % 2 == 0:
+    print(f" {num}  is a even number")
+else:
+    print(f" {num} is a odd number")
+~~~
 
+### # if elif and else condition
+~~~python
 
+import random
 
+num = random.randint(0, 3)
+if num == 0:
+    print("Number = 0")
+elif num == 1:
+    print("Number = 1")
+elif num == 2:
+    print("Number = 2")
+else:
+    print("Number = 3")
+~~~
 
 
 
