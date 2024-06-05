@@ -2,7 +2,7 @@
 ~~~python
 import os
 os.getcwd()
-# Output: dhananjaya.singhar/Library/CloudStorage/OneDrive-MaerskGroup/Data_Science_Class/test.py
+# Output: dhananjaya.singhar/Library/CloudStorage/Drive/Data_Science_Class/test.py
 ~~~
 
 # Variable Declaration
