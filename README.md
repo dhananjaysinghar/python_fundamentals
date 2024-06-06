@@ -307,6 +307,31 @@ else:
 <img src="Examples/4.jpeg" width="300" height= "200" alt="">
 
 
+### try-except in python
+~~~python
+
+#Approach: 1
+try:
+    number = int(input("Enter a number: "))
+    var = number / 0
+    print("number:", var)
+except:
+    print("Unknown error")
+
+    
+    
+# Approach-2
+try:
+    number = int(input("Enter a number: "))
+    var = number / 0
+    print("number:", var)
+except ZeroDivisionError as ex:
+    print("ZeroDivisionError occurred : ", ex)
+except ValueError as ex:
+    print("ValueError occurred: ", ex)
+except Exception as ex:
+    print("Unknown error: ", ex)
+~~~
 
 
 
