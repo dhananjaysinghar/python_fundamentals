@@ -27,7 +27,7 @@ num_123=200   # VALID
 
 # Check type of Variable
 ~~~python
-num=234;
+num=234
 type(num)
 ~~~ 
 
@@ -331,6 +331,21 @@ except ValueError as ex:
     print("ValueError occurred: ", ex)
 except Exception as ex:
     print("Unknown error: ", ex)
+
+# Approach-3
+def add(num1, num2):
+    return num1 + num2
+
+
+try:
+    number_1 = eval(input("Enter First Number : "))
+    number_2 = eval(input("Enter Second Number : "))
+    output = add(number_1, number_2)
+    print(f"Output : {output}")
+except Exception as ex:
+    print(f"Error:{type(ex).__name__} occurred, message : {ex}")
+    # Error:NameError occurred, message : name 'python' is not defined
+
 ~~~
 
 ## How to create Functions/methods in python
