@@ -419,6 +419,53 @@ res1,res2,res3 = m1()
 print(res1, res2, res3)
 ~~~
 
+## How to throw Exception in python
+~~~python
+def isValid(value):
+    if(value != "python"):
+        raise ValueError("Invalid input")    
+    
+    return True
+
+try:
+    print(isValid("python"))
+except Exception as ex:
+    print(f"{type(ex).__name__} :: {ex}")
+~~~
+
+## How to throw Custom Exception in python
+~~~python
+
+class ApplicationException(Exception):
+    def __init__(self, message): # Constructor
+        self.message = message
+        super().__init__(self, message)
+        
+##################################################
+
+def isValid(value):
+    if(value != "python"):
+        raise ApplicationException("Invalid input")    
+    
+    return True
+
+################################################
+
+try:
+    print(isValid("p1ython"))
+except Exception as ex:
+    print(f"{type(ex).__name__} :: {ex.message}")
+    
+~~~
+
+
+
+
+
+
+
+
+
 
 
 
