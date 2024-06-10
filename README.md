@@ -398,10 +398,26 @@ if __name__ == "__main__":
     main()
 ~~~
 
+## How to print global and local with same name
+~~~python
+num=10;
 
+def show(num):
+    print(globals()['num']) # 10
+    print(num) # 20
+    
+show(20)
+~~~
 
+## How to return multiple values from a method
+~~~python
+def m1():
+    return 10, 20, 30
 
+res1,res2,res3 = m1()
 
+print(res1, res2, res3)
+~~~
 
 
 
