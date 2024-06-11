@@ -397,6 +397,7 @@ def main():
 if __name__ == "__main__":
     main()
 ~~~
+
 ## Use of global keyword
 ~~~python
 total = 0
@@ -453,7 +454,6 @@ class ApplicationException(Exception):
         self.message = message
         super().__init__(self, message)
         
-##################################################
 
 def isValid(value):
     if(value != "python"):
@@ -461,7 +461,6 @@ def isValid(value):
     
     return True
 
-################################################
 
 try:
     print(isValid("p1ython"))
