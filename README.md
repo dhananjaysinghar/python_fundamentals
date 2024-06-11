@@ -397,7 +397,19 @@ def main():
 if __name__ == "__main__":
     main()
 ~~~
+## Use of global keyword
+~~~python
+total = 0
 
+def add(value):
+    global total
+    total = total + value
+    return total
+
+add(10)
+add(20)
+print(total) # 30
+~~~
 ## How to print global and local with same name
 ~~~python
 num=10;
