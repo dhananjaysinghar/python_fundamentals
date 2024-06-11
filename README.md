@@ -470,7 +470,13 @@ except Exception as ex:
     
 ~~~
 
+## How to define dataType to variable and return type of a method
+~~~python
+def add(a: int, b: int) -> int :
+    return a + b
 
+print(add(1, 2))
+~~~
 
 
 
