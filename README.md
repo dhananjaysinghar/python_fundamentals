@@ -299,12 +299,12 @@ else:
     print("Number = 3")
 ~~~
 
-### Example: 
+<!-- ### Example:  -->
 
-<img src="Examples/1.jpeg" width="300" height= "200" alt="">
+<!-- <img src="Examples/1.jpeg" width="300" height= "200" alt="">
 <img src="Examples/2.jpeg" width="300" height= "200" alt="">
 <img src="Examples/3.jpeg" width="300" height= "200" alt="">
-<img src="Examples/4.jpeg" width="300" height= "200" alt="">
+<img src="Examples/4.jpeg" width="300" height= "200" alt=""> -->
 
 
 ### try-except in python
