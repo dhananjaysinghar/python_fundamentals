@@ -478,7 +478,26 @@ print(add(1, 2))
 ~~~
 
 
+## Use of ForLoop
+~~~python
+#Approach-1
+for i in range(5):
+    print(i, end = " ")
 
+
+# Approach-2
+for i in range(0, 5):
+    print(i)
+
+
+# Skip index in forward Direction
+for i in range(0, 20, 2):
+     print(i)
+
+# Skip index in backword Direction
+for i in range(20, 0, -2):
+     print(i)
+~~~
 
 
 
