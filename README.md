@@ -490,13 +490,13 @@ for i in range(0, 5):
     print(i)
 
 
-# Skip index in forward Direction
-for i in range(0, 20, 2):
-     print(i)
+# i++ index in forward Direction
+for i in range(0, 20, 1):
+     print(i, end=' ') # 0 1 2 3 4 
 
-# Skip index in backword Direction
-for i in range(20, 0, -2):
-     print(i)
+# i-- index in backword Direction
+for i in range(5, 0, -1):
+     print(i, end=' ') # 5 4 3 2 1 
 ~~~
 
 
