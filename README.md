@@ -497,9 +497,25 @@ for i in range(0, 20, 1):
 # i-- index in backword Direction
 for i in range(5, 0, -1):
      print(i, end=' ') # 5 4 3 2 1 
+
+## Approach-4
+import keyword
+
+for i in keyword.kwlist:
+    print(i) 
+    # False, None, True, and, as, assert, async, await, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
 ~~~
 
-
+## Break in loop
+~~~python
+def findNum(num):
+    for i in range(100):
+        if i == num :
+            print(f"Found {num}")
+            break
+    
+findNum(20)
+~~~
 
 
 
