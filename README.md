@@ -517,6 +517,35 @@ def findNum(num):
 findNum(20)
 ~~~
 
+## in operator
+~~~python
+name = "python"
+
+for i in name:
+    print(i, end= " ") # name = "python"
+    
+    
+if("t" in name):
+    print("Hello")
+~~~
+## Use of ord and chr method (ASCII)
+~~~python
+import string
+print(ord('A')) # 65
+print(chr(65)) # A
+
+for i in string.ascii_uppercase:
+    print(f"{i}: {ord(i)}")
+~~~
+## While Loop
+~~~python
+count = 0
+while(True):
+    print(count)
+    count = count + 1
+    if count > 5:
+        break
+~~~
 
 
 
