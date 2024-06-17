@@ -567,6 +567,25 @@ while(True):
  
 ~~~
 
+## reverse, sorted, len function
+~~~python
+str = 'python'
 
+# Reverse the string Approach-1
+str_reversed = reversed(str)
+for i in str_reversed:
+    print(i, end=" ")
+    
+    
+# Approach-2
+str_reversed = sorted(str, reverse=True)
+for i in str_reversed:
+    print(i, end=" ")
+    
+print()
+# Approach-2
+for i in range(len(str)-1, -1, -1):
+     print(str[i], end=" ")
+~~~
 
 
