@@ -539,12 +539,32 @@ for i in string.ascii_uppercase:
 ~~~
 ## While Loop
 ~~~python
-count = 0
+# Case-1
+for i in range(1,10):
+    print(i, end = " ")
+
+print() # new line
+
+
+
+# Case-2
+i = 1
+while i < 10:
+   print(i, end = " ")
+   i = i +1
+
+
+print() # new line
+
+# Case-3
+count = 1
 while(True):
-    print(count)
+    print(count, end = " ")
     count = count + 1
-    if count > 5:
+    if count >= 10:
         break
+    
+ 
 ~~~
 
 
