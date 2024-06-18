@@ -588,4 +588,19 @@ for i in range(len(str)-1, -1, -1):
      print(str[i], end=" ")
 ~~~
 
-
+## Print Positive and Negative index in one loop
+~~~python
+# Approach -1
+str = "Python"
+length = len(str);
+for i in range(-length, 0):
+    print(f"{str[i]} , N-Index: {i}, P-Index: {length + i}")
+    
+    
+# Approach -2
+str = "Python"
+length = len(str);
+for i in range(length):
+    print(f"{str[i]} , P-Index: {i}, N-Index: {i-length}")
+    
+~~~
