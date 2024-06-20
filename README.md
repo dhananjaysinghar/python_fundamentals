@@ -586,6 +586,9 @@ print()
 # Approach-2
 for i in range(len(str)-1, -1, -1):
      print(str[i], end=" ")
+
+# Approach-3
+str[::-1]
 ~~~
 
 ## Print Positive and Negative index in one loop
