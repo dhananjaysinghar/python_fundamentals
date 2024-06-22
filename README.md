@@ -608,7 +608,7 @@ for i in range(length):
     
 ~~~
 
-## List i Python
+## List in Python
 ~~~python
 data_list = [5, 3, 2, 4, 1]
 data_list1 = ["A", "B", "C"]
