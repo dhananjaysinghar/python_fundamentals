@@ -607,3 +607,44 @@ for i in range(length):
     print(f"{str[i]} , P-Index: {i}, N-Index: {i-length}")
     
 ~~~
+
+## List i Python
+~~~python
+data_list = [5, 3, 2, 4, 1]
+data_list1 = ["A", "B", "C"]
+data_list2 = ["A", "B", "C", 1, 2, 3, True, True, [1, 2 , 3]] # Valid
+print(data_list2)
+
+
+print(type(data_list)) # <class 'list'>
+print(len(data_list2)) # 9
+print(max(data_list)) # 5
+
+print(min(data_list)) # 1
+print(reversed(data_list)) # [<list_reverseiterator object at 0x000001FA866D4790>]
+print(sorted(data_list)) # [1, 2, 3, 4, 5]
+
+print(1 in data_list) #True
+print(1 not in data_list) #False
+print(data_list.index(1)) #4
+
+for i in reversed(data_list):
+    print(i, end= " ") # 1 4 2 3 5
+    
+print("---------------")
+
+
+print(data_list) # [5, 3, 2, 4, 6]
+data_list[data_list.index(1)] = 6
+print(data_list) # [5, 3, 2, 4, 6]
+
+print(data_list[2:-1:]) # [2, 4]
+data_list.append(10)
+print(data_list) # [5, 3, 2, 4, 6, 10]
+data_list.insert(0, 13)
+print(data_list) # [13, 5, 3, 2, 4, 6, 10]
+data_list.reverse()
+print(data_list) # [10, 6, 4, 2, 3, 5]
+dir(list)
+
+~~~
