@@ -634,7 +634,7 @@ for i in reversed(data_list):
 print("---------------")
 
 
-print(data_list) # [5, 3, 2, 4, 6]
+print(data_list) # [5, 3, 2, 4, 1]
 data_list[data_list.index(1)] = 6
 print(data_list) # [5, 3, 2, 4, 6]
 
