@@ -606,6 +606,13 @@ length = len(str);
 for i in range(length):
     print(f"{str[i]} , P-Index: {i}, N-Index: {i-length}")
     
+
+# P , P-Index: 0, N-Index: -6
+# y , P-Index: 1, N-Index: -5
+# t , P-Index: 2, N-Index: -4
+# h , P-Index: 3, N-Index: -3
+# o , P-Index: 4, N-Index: -2
+# n , P-Index: 5, N-Index: -1    
 ~~~
 
 ## List in Python
