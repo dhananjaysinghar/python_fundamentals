@@ -664,6 +664,6 @@ l = l1.copy() [10, 20, 30]
 
 
 ### Lambda Functions in Python
-<img src="Examples/lambda.jpeg" width="400" height= "500" alt="">
+<img src="Examples/lambda.jpeg" width="600" height= "700" alt="">
 
 
