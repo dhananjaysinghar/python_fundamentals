@@ -654,16 +654,39 @@ data_list.reverse()
 print(data_list) # [10, 6, 4, 2, 3, 5]
 dir(list)
 
-l = [1,2,3, 4]
+l = [1,2,3, 4, 2]
 l1 = [10,20,30]
-l.append(l1) #[1, 2, 3, 4, [10, 20, 30]]
-l.extend(l1) #[1, 2, 3, 4, 10, 20, 30]
-l += l1 # [1, 2, 3, 4, 10, 20, 30]
-l = l1.copy() [10, 20, 30]
+l.append(l1) #[1, 2, 3, 4, [10, 20, 30]] # add
+l.extend(l1) #[1, 2, 3, 4, 10, 20, 30] # addAll
+l += l1 # [1, 2, 3, 4, 10, 20, 30] # addAll
+l = l1.copy() # [10, 20, 30] # clone
+print(l.count(2))
 ~~~
 
 
-### Lambda Functions in Python
+
+## List Comprehansive
+~~~python
+l = [i * i for i in range(1,6)] #Map
+l = [i for i in range(1,6) if i % 2 != 0 ] #Filter
+
+# If-Else in one line
+oddList = []
+evenList = []
+[evenList.append(i) if i % 2 == 0 else oddList.append(i) for i in range(1,6) ] 
+print(f"evenList: {evenList}")
+print(f"oddList: {oddList}")
+~~~
+
+## Lambda
+~~~python
+l = list(map(lambda i: i * i, range(1,6))) # [2, 4]
+l = list(filter(lambda i: i % 2 ==0, range(1,6))) # [2, 4]
+
+from functools import reduce
+l = reduce(lambda x, y: x + y, range(1,11)) # 55
+~~~
+
+
+## Lambda Functions in Python
 <img src="Examples/lambda.jpeg" width="600" height= "700" alt="">
-
-
