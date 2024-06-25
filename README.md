@@ -657,8 +657,8 @@ dir(list)
 l = [1,2,3, 4, 2]
 l1 = [10,20,30]
 l.append(l1) #[1, 2, 3, 4, [10, 20, 30]] # add
-l.extend(l1) #[1, 2, 3, 4, 10, 20, 30] # addAll
-l += l1 # [1, 2, 3, 4, 10, 20, 30] # addAll
+l.extend(l1) #[1, 2, 3, 4, 10, 20, 30] # addAll   override l
+l3 = l += l1 # [1, 2, 3, 4, 10, 20, 30] # addAll  new list will be created
 l = l1.copy() # [10, 20, 30] # clone
 print(l.count(2))
 ~~~
