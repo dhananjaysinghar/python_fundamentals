@@ -661,6 +661,22 @@ l.extend(l1) #[1, 2, 3, 4, 10, 20, 30] # addAll   override l
 l3 = l += l1 # [1, 2, 3, 4, 10, 20, 30] # addAll  new list will be created
 l = l1.copy() # [10, 20, 30] # clone
 print(l.count(2))
+
+
+
+l = ["A", "B", "C"]
+
+#i = l.pop()
+#print(i) # C
+#print(l) # ['A', 'B']
+
+i = l.pop(l.index("B"))
+print(i) # B
+print(l) # ['A', 'C']
+
+l.remove("A")
+print(l) # ['C']
+
 ~~~
 
 
