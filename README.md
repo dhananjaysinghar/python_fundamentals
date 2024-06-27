@@ -771,11 +771,16 @@ for i in d1.keys(): #   for i in d1  this also will give key
 for i in d1.values():
     print(i)
     
+# Print all entries
+for i in d1.items():
+    print(i[0], "=", i[1])
+    
     
 d2 = {1: "A", 2: "B"}
 # Print all values by taking keys
 for i in d2.keys():
     print(d2.get(i))
+    
 
 # Note: mutable objects are not allowed as key like list
 ~~
