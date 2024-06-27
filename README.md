@@ -764,7 +764,7 @@ print(type(d1)) # dict
 print(d1)
 
 # Print all keys
-for i in d1.keys():
+for i in d1.keys(): #   for i in d1  this also will give key
     print(i)
     
 # Print all values
