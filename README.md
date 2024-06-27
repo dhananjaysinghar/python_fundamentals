@@ -787,63 +787,7 @@ print(2 in d1) # Check contains key
     
 
 # Note: mutable objects are not allowed as key like list
-~~
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+~~~
 
 
 
