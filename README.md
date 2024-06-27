@@ -781,6 +781,10 @@ d2 = {1: "A", 2: "B"}
 for i in d2.keys():
     print(d2.get(i))
     
+   
+dir(d1.pop(1)) # return and remove
+print(2 in d1) # Check contains key
+    
 
 # Note: mutable objects are not allowed as key like list
 ~~
