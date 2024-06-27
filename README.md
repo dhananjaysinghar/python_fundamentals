@@ -706,3 +706,136 @@ l = reduce(lambda x, y: x + y, range(1,11)) # 55
 
 ## Lambda Functions in Python
 <img src="Examples/lambda.jpeg" width="600" height= "700" alt="">
+
+
+## list.sort(), sorted(list), list.reverse(), reversed(list), del(list[0], list.remove(data))
+~~~python
+list_values = [3, 25, 6, 78, 8, 9]
+
+list_values.reverse()
+
+print(list_values)
+print([i for i in reversed(list_values)])
+
+
+list_values.sort()
+print(list_values)
+print([i for i in sorted(list_values)])
+
+
+
+
+list_values = [3, 25, 6, 78, 8, 9]
+
+del(list_values[0])
+print(list_values) #[25, 6, 78, 8, 9]
+
+list_values.remove(25) 
+print(list_values) # [6, 78, 8, 9]
+
+~~~
+
+## Merge two list
+~~~python
+l1 = [1,2,3, 4]
+l2 = [10,20,30, 40]
+
+l3 = zip(l1, l2) # [(1, 10), (2, 20), (3, 30), (4, 40)]
+
+
+print([i[0] + i [1] for i in l3])
+print([i + j for i, j in l3])
+~~~
+
+## Tuple is immutable form of list
+~~~python
+l1 = (1,2,3, 4)
+print(type(l1))
+l1[0] = 10 # tuple' object does not support item assignment
+l1.append(10) # 'tuple' object has no attribute 'append'
+print(l1)
+~~~
+
+## Dictionary
+~~~python
+d1 = {1: "A", 2: "B"}
+
+print(type(d1)) # dict
+print(d1)
+
+# Print all keys
+for i in d1.keys():
+    print(i)
+    
+# Print all values
+for i in d1.values():
+    print(i)
+    
+    
+d2 = {1: "A", 2: "B"}
+# Print all values by taking keys
+for i in d2.keys():
+    print(d2.get(i))
+
+# Note: mutable objects are not allowed as key like list
+~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
