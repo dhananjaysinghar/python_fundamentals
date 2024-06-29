@@ -735,7 +735,7 @@ print(list_values) # [6, 78, 8, 9]
 
 ~~~
 
-## Merge two list
+## Merge / Zip two list
 ~~~python
 l1 = [1,2,3, 4]
 l2 = [10,20,30, 40]
@@ -788,7 +788,12 @@ print(2 in d1) # Check contains key
 
 # Note: mutable objects are not allowed as key like list
 ~~~
-
+### String Join 
+~~~python
+s = "Hello How Are You"
+l = s.split(" ")
+s1 = ' '.join(l)
+~~~
 
 
 
