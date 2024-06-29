@@ -696,9 +696,57 @@ print(f"oddList: {oddList}")
 
 ## Lambda
 ~~~python
+
+# Single Argument
+cube = lambda e : e * e * e
+print(cube(5))
+
+# Multi Arguments
+addition = lambda x, y : x + y
+print(addition(1, 2))
+
+
+# If condition
+max = lambda x, y: x if x > y else y
+print(max(10, 20))
+
+
+# map
 l = list(map(lambda i: i * i, range(1,6))) # [2, 4]
+
+
+# filter
 l = list(filter(lambda i: i % 2 ==0, range(1,6))) # [2, 4]
 
+ # Map, Filter
+l5 = [1000, 2500, 5000, 7000, 1500]
+l8 = list(map(lambda i: i, 
+             filter(lambda i: i >= 2000, l5)
+             )) # [2500, 5000, 7000]
+
+
+######################################
+# Ruturn Key List
+l5 = {"Raj":1000, "Nehru":2500, "Krupa":5000, "Karuna":7000, "Nidhi":1500}
+
+l8 = list(map(lambda key: key, 
+                filter(lambda key: l5[key] >= 2000, l5)))
+
+########################
+# Ruturn Key, value in dict
+l5 = {"Raj":1000, "Nehru":2500, "Krupa":5000, "Karuna":7000, "Nidhi":1500}
+
+l8 = map(lambda key: {key, l5[key]}, 
+                filter(lambda key: l5[key] >= 2000, l5))
+
+print(list(l8)) # [{'Nehru', 2500}, {5000, 'Krupa'}, {'Karuna', 7000}]
+#print(dict(l8)) # {'Nehru': 2500, 'Krupa': 5000, 'Karuna': 7000}
+
+
+########################
+
+
+# reduce
 from functools import reduce
 l = reduce(lambda x, y: x + y, range(1,11)) # 55
 ~~~
