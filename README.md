@@ -844,8 +844,30 @@ s1 = ' '.join(l)
 ~~~
 
 ## File Handling
-~~~python
 
+### Ways to give file path absolute / relative path
+~~~python
+#filePath = "C:\\Users\\Happy\\Desktop\\Data Science Rec\\Python\\Projects\\python_fundamentals\\Examples\\datafile\mbox-short.txt"
+
+#filePath = "C:/Users/Happy/Desktop/Data Science Rec/Python/Projects/python_fundamentals/Examples/datafiles/mbox-short.txt"
+
+#filePath = r"C:\Users\Happy\Desktop\Data Science Rec\Python\Projects\python_fundamentals\Examples\datafiles\mbox-short.txt"
+
+
+#Examples\\datafiles\\mbox-short.txt
+
+~~~
+
+### How to read file data 
+~~~python
+#file = open("Examples\\datafiles\\mbox-short.txt")
+# file = open("Examples\\datafiles\\mbox-short.txt", mode= 'r', encoding = 'utf-8-sig')
+# print(file.read())
+
+with open("Examples\\datafiles\\mbox-short.txt") as file:
+    data = file.read()
+
+print(data)
 ~~~
 
 
